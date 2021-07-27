@@ -1,0 +1,24 @@
+<h1>Nueva Solicitud</h1>
+<p class="alerta">
+    Esta solicitud tiene que ser primeramente aprobada por nuetro director <b>Albus Dumbledore</b> para poder ser
+    visto en la lista de los estudiantes de <b>Hogwarts</b>.
+</p>
+<div style="justify-content: center;display: flex;">
+    <mat-card class="example-card" style="margin-top: 50px; margin-bottom: 50px;">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{nombre}}</mat-card-title>
+          <mat-card-subtitle>Aprendiz de Magia</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="image">
+        <mat-card-content>
+            <mat-list>
+                <mat-list-item><b style="margin-right: 5px;">Patronus: </b> {{patronus}}</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item><b style="margin-right: 5px;">Fecha: </b> {{dateOfBirth}}</mat-list-item>
+                
+              </mat-list>          
+        </mat-card-content>
+      </mat-card>
+</div>
+  
